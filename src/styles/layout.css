@@ -1,0 +1,87 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24rem;
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--topaz), var(--emerald));
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 2.4rem 2.4rem 4.8rem 2.4rem;
+}
+
+  header a {
+    color: #fff;
+  }
+
+  header h1 {
+    padding-left: .8rem;
+    margin-bottom: 4rem;
+  }
+
+    header h1 a {
+      display: block;
+      opacity: .5;
+      transition: opacity .5s;
+    }
+
+    header h1 a:hover {
+      opacity: 1;
+    }
+
+    header h1 img {
+      width: 130px;
+      height: auto;
+    }
+
+  header .page-list {
+    overflow-y: scroll;
+  }
+
+  header h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: .8rem;
+    margin-bottom: .4rem;
+  }
+
+    header h3 a {
+      display: block;
+      color: rgba(255, 255, 255, .5);
+    }
+
+    header h3 a:hover {
+      color: rgba(255, 255, 255, .8);
+    }
+
+  header ul {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 3.2rem;
+  }
+
+  header ul:last-child {
+    margin-bottom: 0;
+  }
+
+    header ul a {
+      display: block;
+      padding: .4rem .8rem;
+      border-radius: .4rem;
+    }
+
+    header ul a:hover {
+      background-color: rgba(255, 255, 255, .08);
+    }
+
+.content {
+  padding: 4rem 4rem 4rem 28rem;
+}

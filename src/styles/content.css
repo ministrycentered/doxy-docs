@@ -1,0 +1,171 @@
+html {
+  color: var(--gray800);
+  font: .625em/1.5em system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.content {
+}
+
+a {
+	color: var(--turquoise);
+	text-decoration: none;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5,
+p, blockquote, code,
+ul, ol, dl {
+  max-width: 64rem;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--gray900);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  margin-top: 6.4rem;
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+  h3 em {
+    font-style: normal;
+    font-weight: 400;
+  }
+
+h4, dt {
+  color: var(--gray600);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
+}
+
+p, blockquote, code,
+ul, ol, dl {
+  margin-bottom: 2.4rem;
+}
+
+code {
+  display: block;
+  background-color: var(--gray25);
+  padding: 1.2rem 1.6rem;
+  border-radius: 4px;
+}
+
+ul {
+  margin-left: 4rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.captioned-image {
+  color: var(--gray500);
+}
+
+  .captioned-image img {
+    display: block;
+    border: 1px solid var(--gray100);
+    border-radius: 4px;
+    margin-bottom: .8rem;
+  }
+
+  .captioned-image caption {
+    display: block;
+    text-align: left;
+}
+
+.swatches {
+  list-style: none;
+  margin-left: 0;
+}
+
+.color-swatches {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+  .color-swatches li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 32%;
+    color: rgba(255, 255, 255, .7);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    padding: 6.4rem 0 1.6rem 0;
+    border-radius: 4px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  .color-swatches li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .color-swatches li em {
+    display: block;
+    color: rgba(255, 255, 255, .9);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .color-swatches li.dark {
+    color: rgba(0, 0, 0, .2);
+  }
+
+  .color-swatches li.dark em {
+    color: rgba(0, 0, 0, .4);
+  }
+
+.type-swatches {
+}
+
+  .type-swatches li {
+    border-radius: 4px;
+    padding: 1.2rem 1.6rem;
+    margin-bottom: .4rem;
+  }
+
+  .type-swatches li:nth-child(odd) {
+    background-color: var(--gray25);
+  }
+
+  .type-swatches li * {
+    margin: 0;
+  }
+
+  .type-swatches caption {
+    display: block;
+    color: var(--gray500);
+    font-size: 1.4rem;
+    text-align: left;
+  }

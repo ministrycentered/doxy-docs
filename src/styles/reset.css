@@ -1,0 +1,19 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, img,
+a, b, abbr, acronym, big, cite, code, del, em, i, ins, small, strike, strong, sub, sup, u,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	font-size: 100%;
+	vertical-align: baseline;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	margin: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
