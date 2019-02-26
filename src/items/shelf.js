@@ -11,6 +11,7 @@ const Item = () => (
       &lt;Shelf<br />
         &nbsp;&nbsp;&nbsp;style [style object]<br />
         &nbsp;&nbsp;&nbsp;containerStyle [style object]<br />
+        &nbsp;&nbsp;&nbsp;contentContainerStyle [style object]<br />
       &gt;<br />
         &nbsp;&nbsp;&nbsp;&lt;ShelfItem<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[multiline]<br />

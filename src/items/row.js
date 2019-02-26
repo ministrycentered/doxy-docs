@@ -19,12 +19,14 @@ const Item = () => (
         &nbsp;&nbsp;&nbsp;title [string]<br />
         &nbsp;&nbsp;&nbsp;buttonText [string]<br />
         &nbsp;&nbsp;&nbsp;onPress [function]<br />
+        &nbsp;&nbsp;&nbsp;hitSlop [object]<br />
       &gt;<br />
         &nbsp;&nbsp;&nbsp;&lt;Row<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onPress [function]<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hitSlop [object]<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style [style object]<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title [string]<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;titleRight [component]<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subtitle [string]<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description [string]<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imageSize [number]<br />

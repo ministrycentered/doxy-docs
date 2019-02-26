@@ -10,6 +10,7 @@ import ExpandingText from '../items/expanding-text'
 import Forms from '../items/forms'
 import Highlight from '../items/highlight'
 import Icon from '../items/icon'
+import Image from '../items/image'
 import Row from '../items/row'
 import Shelf from '../items/shelf'
 import SiteHeader from '../items/site-header'
@@ -30,6 +31,7 @@ const IndexPage = () => (
     <Forms />
     <Highlight />
     <Icon />
+    <Image />
     <Row />
     <Shelf />
     <SiteHeader />

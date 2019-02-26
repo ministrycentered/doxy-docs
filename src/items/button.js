@@ -31,11 +31,13 @@ const Item = () => (
       &lt;Button<br />
         &nbsp;&nbsp;&nbsp;[secondary | compact | minor | plain | system | disabled]<br />
         &nbsp;&nbsp;&nbsp;onPress [function]<br />
+        &nbsp;&nbsp;&nbsp;onLongPress [function]<br />
         &nbsp;&nbsp;&nbsp;hitSlop [object]<br />
         &nbsp;&nbsp;&nbsp;text [string]<br />
         &nbsp;&nbsp;&nbsp;textStyle [style object]<br />
         &nbsp;&nbsp;&nbsp;bgColor [string]<br />
         &nbsp;&nbsp;&nbsp;style [style object]<br />
+        &nbsp;&nbsp;&nbsp;buttonInnerStyle [style object]<br />
         &nbsp;&nbsp;&nbsp;icon [string]<br />
         &nbsp;&nbsp;&nbsp;iconType [string]<br />
         &nbsp;&nbsp;&nbsp;iconStyle [style object]<br />
