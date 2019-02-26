@@ -9,7 +9,7 @@ const Item = () => (
   <section id="card">
     <h2>Card</h2>
     <p>A card always has an image and title; it can optionally include a subtitle, description, and/or badge (or button). If the card includes a description and a badge, the badge should be displayed below the description; otherwise, it should be displayed at the right.</p>
-    <p><em>The second example card style shown here are not currently in use. Add the secondary prop to your card to display the small image card.</em></p>
+    <p><em>The second example card style shown here is not currently in use. Add the secondary prop to your card to display the small image card.</em></p>
 
     <p><img src={card} alt="Simple card" width="335" /></p>
     <p><img src={cardCollage} alt="Collage card" width="335" /></p>
