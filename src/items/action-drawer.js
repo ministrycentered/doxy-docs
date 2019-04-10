@@ -14,6 +14,7 @@ const Item = () => (
       &lt;ActionDrawer<br />
         &nbsp;&nbsp;&nbsp;message [string]<br />
         &nbsp;&nbsp;&nbsp;messageStyle [style object]<br />
+        &nbsp;&nbsp;&nbsp;barStyles [style object]<br />
         &nbsp;&nbsp;&nbsp;buttonText [string]<br />
         &nbsp;&nbsp;&nbsp;buttonOnPress [function]<br />
       /&gt;

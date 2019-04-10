@@ -22,6 +22,7 @@ const PageList = () => (
       <li><Link to="/components/#forms">Forms</Link></li>
       <li><Link to="/components/#highlight">Highlight</Link></li>
       <li><Link to="/components/#icon">Icon</Link></li>
+      <li><Link to="/components/#image">Image</Link></li>
       <li><Link to="/components/#row">Row</Link></li>
       <li><Link to="/components/#shelf">Shelf</Link></li>
       <li><Link to="/components/#site-header">Site Header</Link></li>
