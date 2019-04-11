@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Dimensions, StyleSheet, TouchableOpacity, View } from 'react-native'
-import FastImage from 'react-native-fast-image'
+// import FastImage from 'react-native-fast-image'
 
 import colors from './colors'
 import { Badge } from './badge'
@@ -26,10 +26,10 @@ class Card extends Component {
                 height: cardWidth * (9/16)
               }
             ]}
-            resizeMode={this.props.resizeMode ? this.props.resizeMode : FastImage.resizeMode.cover}
+            // resizeMode={this.props.resizeMode ? this.props.resizeMode : FastImage.resizeMode.cover}
             source={{
               uri: this.props.image,
-              priority: FastImage.priority.normal
+              // priority: FastImage.priority.normal
             }}
           />
         )}

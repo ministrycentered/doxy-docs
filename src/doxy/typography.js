@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Platform, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import { smartypantsu } from 'smartypants'
-import { DoxyIcon } from './icon'
+// import { DoxyIcon } from './icon'
 
 import colors from './colors'
 
@@ -32,22 +32,22 @@ class Heading extends Component {
   }
 }
 
-class LinkedHeading extends Component {
-  render() {
-    return (
-      <TouchableOpacity onPress={this.props.onPress} style={styles.linkedHeading}>
-        <Heading
-          level={this.props.level}
-          style={this.props.style}
-          numberOfLines={this.props.numberOfLines}
-        >
-          {smartenQuotes(this.props.children)}{' '}
-        </Heading>
-        <DoxyIcon style={[styles.linkedHeadingIcon]} name={'chevron-thin-right'} type={'Entypo'} />
-      </TouchableOpacity>
-    )
-  }
-}
+// class LinkedHeading extends Component {
+//   render() {
+//     return (
+//       <TouchableOpacity onPress={this.props.onPress} style={styles.linkedHeading}>
+//         <Heading
+//           level={this.props.level}
+//           style={this.props.style}
+//           numberOfLines={this.props.numberOfLines}
+//         >
+//           {smartenQuotes(this.props.children)}{' '}
+//         </Heading>
+//         <DoxyIcon style={[styles.linkedHeadingIcon]} name={'chevron-thin-right'} type={'Entypo'} />
+//       </TouchableOpacity>
+//     )
+//   }
+// }
 
 class PlainText extends Component {
   render() {
@@ -180,4 +180,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export { smartenQuotes, Heading, LinkedHeading, PlainText, SecondaryText, TertiaryText, Footnote }
+export { smartenQuotes, Heading, PlainText, SecondaryText, TertiaryText, Footnote }

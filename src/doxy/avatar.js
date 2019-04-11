@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Platform, StyleSheet, View } from 'react-native'
-import FastImage from 'react-native-fast-image'
+// import FastImage from 'react-native-fast-image'
 
 import colors from './colors'
 import { PlainText } from './typography'
@@ -26,10 +26,10 @@ class Avatar extends Component {
             this.props.style
           ]}
           loaderSize={this.props.size}
-          resizeMode={FastImage.resizeMode.cover}
+          // resizeMode={FastImage.resizeMode.cover}
           source={{
             uri: this.props.image,
-            priority: FastImage.priority.normal
+            // priority: FastImage.priority.normal
           }}
         />
       )
