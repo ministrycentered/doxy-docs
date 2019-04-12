@@ -131,19 +131,31 @@ const IndexPage = () => (
         text="Test button!"
         style={{ alignSelf: 'flex-start', marginTop: space(3) }}
       />
-      <TextLink>Test text link</TextLink>
+      <DoxyButton
+        minor
+        compact
+        text="Test minor compact button!"
+        style={{ alignSelf: 'flex-start', marginVertical: space(2) }}
+      />
+
+      <View style={{ flexDirection: 'row', marginVertical: space(2) }}>
+        <TextLink style={{ alignSelf: 'flex-start' }}>Test text link</TextLink>
+      </View>
+
       <ActionBar
+        style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         message="Test ActionDrawer"
         buttonText="Register"
         buttonOnPress={() => {}}
       />
-      <View style={{ flexDirection: 'row' }}>
+      <View style={{ flexDirection: 'row', marginVertical: space(3) }}>
         <Avatar style={{ marginRight: space(1) }} text="DD" />
         <Avatar image="https://placekitten.com/200/200" />
       </View>
-
-      <DoxySpinner size={50} />
-      <ExpandingText>
+      <View style={{ flex: 0, justifyContent: 'flex-start', marginVertical: space(3) }}>
+        <DoxySpinner size={50} />
+      </View>
+      <ExpandingText style={{ marginVertical: space(3) }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper enim ita
         adsumit aliquid, ut ea, quae prima dederit, non deserat. An hoc usque
         quaque, aliter in vita? Vide, ne etiam menses! nisi forte eum dicis,
@@ -174,25 +186,28 @@ const IndexPage = () => (
         </Badge>
       </View>
       <Card
+        style={{ marginVertical: space(2), maxWidth: 600 }}
         title="Church Youth Retreat"
         subtitle="Begins May 2, 2018"
-        image="https://placekitten.com/300/200"
+        image="https://placekitten.com/900/650"
         badge="$160-240"
         onPress={() => {}}
       />
 
       <Card
         secondary
+        style={{ marginVertical: space(2) }}
         title="Church Youth Retreat"
         image="https://placekitten.com/300/200"
         onPress={() => {}}
       />
 
-      <Input primary />
-      <Select label="Select" />
+      <Input primary style={{ marginVertical: space(2) }} />
+      <Select label="Select" style={{ marginVertical: space(2) }} />
 
       <RowGroup title="Row Group">
         <Row
+          style={{ marginVertical: space(1) }}
           title="Test Row"
           description="The quick brown fox jumped over the lazy dog."
           avatar="https://placekitten.com/150/150"

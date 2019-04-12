@@ -147,11 +147,12 @@ const styles = StyleSheet.create({
 
   primaryButton: {
     height: 40,
-    paddingHorizontal: 32,
+    paddingHorizontal: 8,
   },
   buttonInner: {
     flexDirection: 'row',
     alignItems: 'center',
+    paddingHorizontal: 12
   },
   primaryText: {
     color: 'white',
@@ -164,19 +165,17 @@ const styles = StyleSheet.create({
 
   compactButton: {
     height: 32,
-    paddingHorizontal: 16,
+    paddingHorizontal: 4,
   },
 
   secondaryButton: {
     padding: 2,
   },
-  minorSecondaryButton: {
-    padding: 1,
-  },
+
   secondaryButtonInner: {
     height: 36,
     backgroundColor: 'white',
-    paddingHorizontal: 32,
+    paddingHorizontal: 20,
     borderRadius: 20,
   },
   compactSecondaryButtonInner: {
@@ -188,7 +187,6 @@ const styles = StyleSheet.create({
   minorSecondaryButtonInner: {
     height: 22,
     backgroundColor: 'white',
-    paddingHorizontal: 12,
     borderRadius: 20,
   },
   secondaryText: {
@@ -206,7 +204,9 @@ const styles = StyleSheet.create({
 
   minorButton: {
     height: 24,
-    paddingHorizontal: 12,
+  },
+  minorSecondaryButton: {
+    paddingHorizontal: 1,
   },
   minorCompactButton: {
     height: 'auto',
