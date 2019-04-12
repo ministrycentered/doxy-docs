@@ -17,6 +17,8 @@ class Heading extends Component {
 
     return (
       <Text
+        accessibilityRole="heading"
+        aria-level={this.props.level}
         style={[styles.global, level, this.props.style]}
         allowFontScaling={this.props.allowFontScaling}
         adjustsFontSizeToFit={this.props.adjustsFontSizeToFit}
@@ -53,6 +55,7 @@ class PlainText extends Component {
   render() {
     return (
       <Text
+        accessibilityRole="p"
         style={[styles.global, styles.plain, this.props.style]}
         numberOfLines={this.props.numberOfLines}
         onPress={this.props.onPress}

@@ -10,7 +10,8 @@ const space = value => {
 const platformMargin = () =>
   Platform.select({
     ios: 20,
-    android: 16
+    android: 16,
+    web: 20
   })
 
 export { space, platformMargin }

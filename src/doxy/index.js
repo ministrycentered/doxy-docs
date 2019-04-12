@@ -12,27 +12,27 @@ import {
   Footnote
 } from './typography'
 
-// import { ActionBar } from './action-bar'
+import { ActionBar } from './action-bar'
 
 import { Avatar } from './avatar'
 
 import { Badge } from './badge'
 
-// import { DoxyButton, TextLink } from './buttons'
+import { DoxyButton, TextLink } from './buttons'
 
-// import { Card } from './card'
+import { Card } from './card'
 
-// import { ExpandingText } from './expanding-text'
+import { ExpandingText } from './expanding-text'
 
-// import { Input, Select } from './forms'
+import { Input, Select } from './forms'
 
 import { DoxyImage } from './image'
 
 import { DoxySpinner } from './spinner'
 
-// import { ARROW_RIGHT, ARROW_LEFT, DoxyIcon } from './icon'
+import { ARROW_RIGHT, ARROW_LEFT, DoxyIcon } from './icon'
 
-// import { Row, RowGroup } from './row'
+import { Row, RowGroup } from './row'
 
 import { Shelf, ShelfItem } from './shelf'
 
@@ -42,27 +42,27 @@ export {
   platformMargin,
   smartenQuotes,
   Heading,
-  // LinkedHeading,
+  LinkedHeading,
   PlainText,
   SecondaryText,
   TertiaryText,
   Footnote,
-  // ActionBar,
+  ActionBar,
   Avatar,
   Badge,
-  // DoxyButton,
+  DoxyButton,
   DoxyImage,
   DoxySpinner,
-  // TextLink,
-  // Card,
-  // ExpandingText,
-  // Input,
-  // Select,
-  // ARROW_RIGHT,
-  // ARROW_LEFT,
-  // DoxyIcon,
-  // Row,
-  // RowGroup,
+  TextLink,
+  Card,
+  ExpandingText,
+  Input,
+  Select,
+  ARROW_RIGHT,
+  ARROW_LEFT,
+  DoxyIcon,
+  Row,
+  RowGroup,
   Shelf,
   ShelfItem
 }

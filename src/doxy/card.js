@@ -11,6 +11,7 @@ import { platformMargin } from './grid'
 class Card extends Component {
   render() {
     const cardWidth = Dimensions.get('window').width - platformMargin() * 2
+    console.log(Dimensions.get('window'))
 
     return (
       <TouchableOpacity

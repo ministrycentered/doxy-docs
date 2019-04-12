@@ -55,6 +55,7 @@ class Input extends Component {
   }
 
   render() {
+    let type = null
     if (this.props.primary) type = styles.primaryInput
     else if (this.props.secondary) type = styles.secondaryInput
     else type = styles.basicInput
