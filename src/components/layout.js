@@ -10,19 +10,20 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Doxy: A Design System"
       meta={[
-        { name: 'description', content: 'A design system for Church Center, installed and online.' },
-        { name: 'keywords', content: 'design system, planning center' },
+        {
+          name: 'description',
+          content: 'A design system for Church Center, installed and online.'
+        },
+        { name: 'keywords', content: 'design system, planning center' }
       ]}
     />
     <Header />
-    <div className="content">
-      {children}
-    </div>
+    <div className="content">{children}</div>
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default TemplateWrapper

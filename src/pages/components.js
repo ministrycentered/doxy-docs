@@ -21,8 +21,21 @@ const IndexPage = () => (
   <Layout>
     <div>
       <h1>Components</h1>
-      <p>This preliminary component library is a work in progress, likely incomplete, and has currently only been explored for mobile. Tablet and desktop considerations to follow.</p>
-      <p>If you’re interested in playing with these components, you can <a href="https://drive.google.com/file/d/1_Yw06QVvHVkGeod7Cw0j4MyZSNbgfMFD/view?usp=sharing">grab the XD file</a>. You can also <a href="https://drive.google.com/file/d/1vaD35GMHK89oYN502owZSV_Nj0JJ6P5U/view?usp=sharing">peek at the views I created</a> for initial proof of concept.</p>
+      <p>
+        This preliminary component library is a work in progress, likely incomplete, and has
+        currently only been explored for mobile. Tablet and desktop considerations to follow.
+      </p>
+      <p>
+        If you’re interested in playing with these components, you can{' '}
+        <a href="https://drive.google.com/file/d/1_Yw06QVvHVkGeod7Cw0j4MyZSNbgfMFD/view?usp=sharing">
+          grab the XD file
+        </a>
+        . You can also{' '}
+        <a href="https://drive.google.com/file/d/1vaD35GMHK89oYN502owZSV_Nj0JJ6P5U/view?usp=sharing">
+          peek at the views I created
+        </a>{' '}
+        for initial proof of concept.
+      </p>
 
       <ActionDrawer />
       <Avatar />

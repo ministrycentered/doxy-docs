@@ -25,7 +25,11 @@ class ActionBar extends Component {
         </View>
         <View>
           {this.props.buttonText && (
-            <DoxyButton text={this.props.buttonText} disabled={this.props.disabled} onPress={this.props.buttonOnPress} />
+            <DoxyButton
+              text={this.props.buttonText}
+              disabled={this.props.disabled}
+              onPress={this.props.buttonOnPress}
+            />
           )}
         </View>
       </View>

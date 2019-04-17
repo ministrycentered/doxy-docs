@@ -28,7 +28,7 @@ class Avatar extends Component {
           loaderSize={this.props.size}
           // resizeMode={FastImage.resizeMode.cover}
           source={{
-            uri: this.props.image,
+            uri: this.props.image
             // priority: FastImage.priority.normal
           }}
         />

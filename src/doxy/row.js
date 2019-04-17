@@ -107,14 +107,14 @@ class RowGroup extends Component {
     return (
       <View style={[this.props.style, this.props.menu ? styles.menu : null]}>
         <View style={[styles.rowGroupTitle]}>
-          {this.props.title &&
-            !this.props.onTitlePress && <Heading level={3}>{this.props.title}</Heading>}
-          {this.props.title &&
-            this.props.onTitlePress && (
-              <LinkedHeading level={3} onPress={this.props.onTitlePress}>
-                {this.props.title}
-              </LinkedHeading>
-            )}
+          {this.props.title && !this.props.onTitlePress && (
+            <Heading level={3}>{this.props.title}</Heading>
+          )}
+          {this.props.title && this.props.onTitlePress && (
+            <LinkedHeading level={3} onPress={this.props.onTitlePress}>
+              {this.props.title}
+            </LinkedHeading>
+          )}
           {this.props.buttonText && (
             <DoxyButton
               minor

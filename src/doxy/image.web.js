@@ -28,12 +28,14 @@ class DoxyImage extends Component {
         />
         {this.state.loading && (
           <View
-            style={[styles.loadingBackground, {
-              borderRadius: borderRadius,
-              width: width,
-              height: height
-            }]
-            }
+            style={[
+              styles.loadingBackground,
+              {
+                borderRadius: borderRadius,
+                width: width,
+                height: height
+              }
+            ]}
           >
             <DoxySpinner style={{ width: width, height: height }} size={30} />
           </View>
@@ -63,8 +65,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.gray100
   },
   image: {
-    opacity: 0,
-    // zIndex: 1 
+    opacity: 0
+    // zIndex: 1
   }
 })
 

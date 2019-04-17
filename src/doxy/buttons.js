@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import React, { Component } from 'react'
+import { Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
-import LinearGradient from 'react-native-linear-gradient';
-import colors from './colors';
-import { DoxyIcon } from './icon';
+import LinearGradient from 'react-native-linear-gradient'
+import colors from './colors'
+import { DoxyIcon } from './icon'
 
 class DoxyButton extends Component {
   render() {
     if (this.props.disabled) {
-      return <View>{this.renderContent()}</View>;
+      return <View>{this.renderContent()}</View>
     }
     return (
       <TouchableOpacity
@@ -25,62 +19,54 @@ class DoxyButton extends Component {
       >
         {this.renderContent()}
       </TouchableOpacity>
-    );
+    )
   }
   renderContent() {
     var buttonColors = this.props.disabled
       ? [colors.gray300, colors.gray300]
       : this.props.bgColor
         ? [this.props.bgColor, this.props.bgColor]
-        : [colors.topaz, colors.emerald];
-    var buttonType = null;
-    var buttonInner = !this.props.system 
-      && !this.props.plain 
-      && !this.props.compact
-      && styles.primaryButtonInner;
-    var buttonText = this.props.disabled
-      ? styles.disabledText
-      : styles.primaryText;
-    var buttonScale = this.props.compact
-      ? styles.compactButton
-      : styles.primaryButton;
+        : [colors.topaz, colors.emerald]
+    var buttonType = null
+    var buttonInner =
+      !this.props.system && !this.props.plain && !this.props.compact && styles.primaryButtonInner
+    var buttonText = this.props.disabled ? styles.disabledText : styles.primaryText
+    var buttonScale = this.props.compact ? styles.compactButton : styles.primaryButton
 
     if (this.props.plain) {
-      buttonColors = ['transparent', 'transparent'];
-      buttonType = styles.plainButton;
-      buttonText = styles.plainButtonText;
+      buttonColors = ['transparent', 'transparent']
+      buttonType = styles.plainButton
+      buttonText = styles.plainButtonText
     } else if (this.props.system) {
-      buttonColors = ['transparent', 'transparent'];
-      buttonType = styles.systemButton;
-      buttonText = styles.systemButtonText;
+      buttonColors = ['transparent', 'transparent']
+      buttonType = styles.systemButton
+      buttonText = styles.systemButtonText
     } else if (this.props.minor) {
-      buttonText = styles.minorText;
-      buttonScale = styles.minorButton;
-      buttonInner = !this.props.compact && styles.minorButtonInner;
+      buttonText = styles.minorText
+      buttonScale = styles.minorButton
+      buttonInner = !this.props.compact && styles.minorButtonInner
 
       if (this.props.compact) {
-        buttonColors = ['transparent', 'transparent'];
-        buttonType = styles.minorCompactButton;
-        buttonText = styles.minorCompactText;
+        buttonColors = ['transparent', 'transparent']
+        buttonType = styles.minorCompactButton
+        buttonText = styles.minorCompactText
       } else if (this.props.secondary) {
-        buttonType = styles.minorSecondaryButton;
-        buttonInner = styles.minorSecondaryButtonInner;
-        buttonText = styles.minorSecondaryText;
+        buttonType = styles.minorSecondaryButton
+        buttonInner = styles.minorSecondaryButtonInner
+        buttonText = styles.minorSecondaryText
       } else {
-        buttonType = styles.minorButton;
+        buttonType = styles.minorButton
       }
     } else if (this.props.secondary) {
       if (this.props.disabled) {
-        buttonColors = [colors.gray100, colors.gray100];
+        buttonColors = [colors.gray100, colors.gray100]
       }
-      buttonType = styles.secondaryButton;
+      buttonType = styles.secondaryButton
       buttonInner = this.props.compact
         ? styles.compactSecondaryButtonInner
-        : styles.secondaryButtonInner;
-      buttonText = this.props.disabled
-        ? styles.disabledSecondaryText
-        : styles.secondaryText;
-      buttonScale = null;
+        : styles.secondaryButtonInner
+      buttonText = this.props.disabled ? styles.disabledSecondaryText : styles.secondaryText
+      buttonScale = null
     }
 
     return (
@@ -90,9 +76,7 @@ class DoxyButton extends Component {
         end={{ x: 0.9, y: 0.9 }}
         style={[styles.globalButton, buttonType, buttonScale, this.props.style]}
       >
-        <View
-          style={[styles.buttonInner, buttonInner, this.props.buttonInnerStyle]}
-        >
+        <View style={[styles.buttonInner, buttonInner, this.props.buttonInnerStyle]}>
           {this.props.icon && (
             <DoxyIcon
               name={this.props.icon}
@@ -110,7 +94,7 @@ class DoxyButton extends Component {
           </Text>
         </View>
       </LinearGradient>
-    );
+    )
   }
 }
 
@@ -125,7 +109,7 @@ class TextLink extends Component {
       >
         {this.props.children}
       </Text>
-    );
+    )
   }
 }
 
@@ -134,60 +118,60 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 20,
+    borderRadius: 20
   },
   globalText: {
     backgroundColor: 'transparent',
     fontFamily: Platform.select({
       ios: 'System',
-      android: 'normal',
+      android: 'normal'
     }),
     fontWeight: '700',
-    textAlign: 'center',
+    textAlign: 'center'
   },
   icon: {
-    marginRight: 6,
+    marginRight: 6
   },
 
   primaryButton: {
-    height: 40,
+    height: 40
   },
   primaryButtonInner: {
     paddingHorizontal: 20
   },
   buttonInner: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   primaryText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 16
   },
   disabledText: {
     color: colors.gray100,
-    fontSize: 16,
+    fontSize: 16
   },
 
   compactButton: {
     height: 32,
-    paddingHorizontal: 12,
+    paddingHorizontal: 12
   },
 
   secondaryButton: {
-    padding: 2,
+    padding: 2
   },
 
   secondaryButtonInner: {
     height: 36,
     backgroundColor: 'white',
     paddingHorizontal: 20,
-    borderRadius: 20,
+    borderRadius: 20
   },
   compactSecondaryButtonInner: {
     height: 28,
     backgroundColor: 'white',
     paddingHorizontal: 12,
-    borderRadius: 20,
+    borderRadius: 20
   },
   minorSecondaryButtonInner: {
     height: 22,
@@ -197,68 +181,68 @@ const styles = StyleSheet.create({
   },
   secondaryText: {
     color: colors.turquoise,
-    fontSize: 16,
+    fontSize: 16
   },
   minorSecondaryText: {
     color: colors.turquoise,
-    fontSize: 14,
+    fontSize: 14
   },
   disabledSecondaryText: {
     color: colors.gray300,
-    fontSize: 16,
+    fontSize: 16
   },
 
   minorButton: {
-    height: 24,
+    height: 24
   },
   minorButtonInner: {
-    paddingHorizontal: 12,
+    paddingHorizontal: 12
   },
   minorSecondaryButton: {
-    paddingHorizontal: 1,
+    paddingHorizontal: 1
   },
   minorCompactButton: {
     height: 'auto',
-    paddingHorizontal: 0,
+    paddingHorizontal: 0
   },
   minorText: {
     color: 'white',
-    fontSize: 14,
+    fontSize: 14
   },
   minorCompactText: {
     color: colors.gray600,
-    fontSize: 14,
+    fontSize: 14
   },
 
   plainButton: {
     height: 'auto',
-    paddingHorizontal: 0,
+    paddingHorizontal: 0
   },
   plainButtonText: {
     color: colors.gray400,
     fontSize: 16,
-    fontWeight: '400',
+    fontWeight: '400'
   },
 
   systemButton: {
     height: 'auto',
     paddingHorizontal: 0,
-    paddingVertical: 12,
+    paddingVertical: 12
   },
   systemButtonText: {
     color: 'rgb(0,122,255)',
     fontSize: 16,
-    fontWeight: '400',
+    fontWeight: '400'
   },
 
   textLink: {
     fontFamily: Platform.select({
       ios: 'System',
-      android: 'normal',
+      android: 'normal'
     }),
     color: colors.turquoise,
-    fontSize: 16,
-  },
-});
+    fontSize: 16
+  }
+})
 
-export { DoxyButton, TextLink };
+export { DoxyButton, TextLink }

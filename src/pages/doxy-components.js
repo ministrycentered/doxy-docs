@@ -1,7 +1,7 @@
-import React from 'react';
-import { View } from 'react-native';
+import React from 'react'
+import { View } from 'react-native'
 
-import Layout from '../components/layout';
+import Layout from '../components/layout'
 import {
   colors,
   space,
@@ -22,8 +22,8 @@ import {
   Input,
   Select,
   RowGroup,
-  Row,
-} from '../doxy/';
+  Row
+} from '../doxy/'
 
 function IndexPage() {
   return (
@@ -32,10 +32,7 @@ function IndexPage() {
         <h1>Components</h1>
 
         <View>
-          <Heading
-            level={2}
-            style={{ marginVertical: space(2), marginTop: space(4) }}
-          >
+          <Heading level={2} style={{ marginVertical: space(2), marginTop: space(4) }}>
             Typography
           </Heading>
         </View>
@@ -65,9 +62,7 @@ function IndexPage() {
           </Heading>
         </View>
         <View>
-          <PlainText style={{ marginBottom: space(2) }}>
-            This is a PlainText component.
-          </PlainText>
+          <PlainText style={{ marginBottom: space(2) }}>This is a PlainText component.</PlainText>
         </View>
         <View>
           <SecondaryText style={{ marginBottom: space(2) }}>
@@ -80,9 +75,7 @@ function IndexPage() {
           </TertiaryText>
         </View>
         <View>
-          <Footnote style={{ marginBottom: space(2) }}>
-            This is a Footnote component.
-          </Footnote>
+          <Footnote style={{ marginBottom: space(2) }}>This is a Footnote component.</Footnote>
         </View>
 
         <View>
@@ -90,10 +83,7 @@ function IndexPage() {
             Buttons
           </Heading>
         </View>
-        <DoxyButton
-          text="Primary"
-          style={{ alignSelf: 'flex-start', marginTop: space(3) }}
-        />
+        <DoxyButton text="Primary" style={{ alignSelf: 'flex-start', marginTop: space(3) }} />
         <DoxyButton
           secondary
           text="Secondary"
@@ -121,11 +111,7 @@ function IndexPage() {
           text="Compact Disabled"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
-        <DoxyButton
-          minor
-          text="Minor"
-          style={{ alignSelf: 'flex-start', marginTop: space(3) }}
-        />
+        <DoxyButton minor text="Minor" style={{ alignSelf: 'flex-start', marginTop: space(3) }} />
         <DoxyButton
           minor
           secondary
@@ -172,10 +158,7 @@ function IndexPage() {
         </View>
 
         <View>
-          <Heading
-            level={2}
-            style={{ marginTop: space(4), marginBottom: space(2) }}
-          >
+          <Heading level={2} style={{ marginTop: space(4), marginBottom: space(2) }}>
             Action Drawer
           </Heading>
         </View>
@@ -198,10 +181,7 @@ function IndexPage() {
         </View>
 
         <View>
-          <Heading
-            level={2}
-            style={{ marginTop: space(4), marginBottom: space(2) }}
-          >
+          <Heading level={2} style={{ marginTop: space(4), marginBottom: space(2) }}>
             Spinner
           </Heading>
         </View>
@@ -210,7 +190,7 @@ function IndexPage() {
             flex: 0,
             width: 100,
             justifyContent: 'flex-start',
-            marginVertical: space(3),
+            marginVertical: space(3)
           }}
         >
           <DoxySpinner size={50} />
@@ -222,13 +202,11 @@ function IndexPage() {
           </Heading>
         </View>
         <ExpandingText style={{ marginVertical: space(3) }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper enim
-          ita adsumit aliquid, ut ea, quae prima dederit, non deserat. An hoc
-          usque quaque, aliter in vita? Vide, ne etiam menses! nisi forte eum
-          dicis, qui, simul atque arripuit, interficit. Sin te auctoritas
-          commovebat, nobisne omnibus et Platoni ipsi nescio quem illum
-          anteponebas? An me, inquis, tam amentem putas, ut apud imperitos isto
-          modo loquar?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper enim ita adsumit aliquid,
+          ut ea, quae prima dederit, non deserat. An hoc usque quaque, aliter in vita? Vide, ne
+          etiam menses! nisi forte eum dicis, qui, simul atque arripuit, interficit. Sin te
+          auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? An
+          me, inquis, tam amentem putas, ut apud imperitos isto modo loquar?
         </ExpandingText>
 
         <View>
@@ -241,7 +219,9 @@ function IndexPage() {
           <Badge style={{ marginRight: space(1) }} textStyle={{ fontSize: 12 }}>
             40 available
           </Badge>
-          <Badge style={{ marginRight: space(1) }} textStyle={{ fontSize: 12 }}>Campus: West Hills</Badge>
+          <Badge style={{ marginRight: space(1) }} textStyle={{ fontSize: 12 }}>
+            Campus: West Hills
+          </Badge>
           <Badge
             style={{ backgroundColor: colors.ruby, marginRight: space(1) }}
             textStyle={{ fontSize: 12, color: 'white' }}
@@ -250,10 +230,8 @@ function IndexPage() {
           </Badge>
           <Badge
             style={{
-              backgroundColor: colors.emerald
-                .replace('hsl', 'hsla')
-                .replace(')', ', 0.2)'),
-              marginRight: space(1),
+              backgroundColor: colors.emerald.replace('hsl', 'hsla').replace(')', ', 0.2)'),
+              marginRight: space(1)
             }}
             textStyle={{ fontSize: 12, color: colors.emerald }}
           >
@@ -262,7 +240,7 @@ function IndexPage() {
           <Badge
             style={{
               backgroundColor: 'white',
-              marginRight: space(1),
+              marginRight: space(1)
             }}
             textStyle={{ fontSize: 12, color: colors.emerald }}
           >
@@ -273,7 +251,7 @@ function IndexPage() {
                 fontSize: 12,
                 lineHeight: 16,
                 marginRight: space(0.5),
-                color: colors.emerald,
+                color: colors.emerald
               }}
             />
             Open
@@ -281,10 +259,7 @@ function IndexPage() {
         </View>
 
         <View>
-          <Heading
-            level={2}
-            style={{ marginVertical: space(1), marginTop: space(4) }}
-          >
+          <Heading level={2} style={{ marginVertical: space(1), marginTop: space(4) }}>
             Card
           </Heading>
         </View>
@@ -306,33 +281,19 @@ function IndexPage() {
         />
 
         <View>
-          <Heading
-            level={2}
-            style={{ marginVertical: space(1), marginTop: space(4) }}
-          >
+          <Heading level={2} style={{ marginVertical: space(1), marginTop: space(4) }}>
             Forms
           </Heading>
         </View>
-        <Input
-          primary
-          placeholder="Input placeholder"
-          style={{ marginVertical: space(2) }}
-        />
+        <Input primary placeholder="Input placeholder" style={{ marginVertical: space(2) }} />
         <Select label="Select" style={{ marginVertical: space(2) }} />
 
         <View>
-          <Heading
-            level={2}
-            style={{ marginVertical: space(2), marginTop: space(4) }}
-          >
+          <Heading level={2} style={{ marginVertical: space(2), marginTop: space(4) }}>
             Row
           </Heading>
         </View>
-        <RowGroup
-          title="Row Group Title"
-          buttonText="Subscribe"
-          style={{ width: 300 }}
-        >
+        <RowGroup title="Row Group Title" buttonText="Subscribe" style={{ width: 300 }}>
           <Row
             style={{ marginVertical: space(1) }}
             title="Test Row"
@@ -356,10 +317,7 @@ function IndexPage() {
         </RowGroup>
 
         <View>
-          <Heading
-            level={2}
-            style={{ marginVertical: space(1), marginTop: space(4) }}
-          >
+          <Heading level={2} style={{ marginVertical: space(1), marginTop: space(4) }}>
             Icon
           </Heading>
         </View>
@@ -372,7 +330,7 @@ function IndexPage() {
         </View>
       </div>
     </Layout>
-  );
+  )
 }
 
-export default IndexPage;
+export default IndexPage

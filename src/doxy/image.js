@@ -7,7 +7,7 @@ import { DoxySpinner } from './spinner'
 
 class DoxyImage extends Component {
   state = {
-    loading: true,
+    loading: true
   }
 
   render() {
@@ -28,8 +28,8 @@ class DoxyImage extends Component {
               {
                 borderRadius: borderRadius,
                 width: width,
-                height: height,
-              },
+                height: height
+              }
             ]}
           >
             <DoxySpinner
@@ -44,7 +44,7 @@ class DoxyImage extends Component {
 
   _onLoad() {
     this.setState({
-      loading: false,
+      loading: false
     })
   }
 }
@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     // zIndex: 0,
-    backgroundColor: colors.gray100,
+    backgroundColor: colors.gray100
   },
   image: {
     backgroundColor: 'transparent',
-    zIndex: 300,
-  },
+    zIndex: 300
+  }
 })
 
 export { DoxyImage }

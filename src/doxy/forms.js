@@ -9,12 +9,11 @@ class Select extends Component {
   render() {
     return (
       <React.Fragment>
-        {this.props.label &&
-          this.props.labelOutside && (
-            <PlainText style={[styles.secondaryLabel, this.props.labelStyle]}>
-              {this.props.label}
-            </PlainText>
-          )}
+        {this.props.label && this.props.labelOutside && (
+          <PlainText style={[styles.secondaryLabel, this.props.labelStyle]}>
+            {this.props.label}
+          </PlainText>
+        )}
         <TouchableOpacity onPress={this.props.onPress} style={[styles.select, this.props.style]}>
           {this.props.icon && (
             <DoxyIcon
@@ -24,12 +23,11 @@ class Select extends Component {
             />
           )}
           {this.props.image && <View style={{ marginRight: 8 }}>{this.props.image}</View>}
-          {!this.props.labelOutside &&
-            this.props.label && (
-              <Heading level={4} style={[styles.selectLabel, this.props.labelStyle]}>
-                {this.props.label}
-              </Heading>
-            )}
+          {!this.props.labelOutside && this.props.label && (
+            <Heading level={4} style={[styles.selectLabel, this.props.labelStyle]}>
+              {this.props.label}
+            </Heading>
+          )}
           <PlainText style={this.props.textStyle} numberOfLines={1}>
             {this.props.title}
           </PlainText>
