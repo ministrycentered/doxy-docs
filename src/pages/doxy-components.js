@@ -238,11 +238,13 @@ function IndexPage() {
         </View>
 
         <View style={{ flexDirection: 'row' }}>
-          <Badge style={{ marginRight: space(1) }}>40 available</Badge>
-          <Badge style={{ marginRight: space(1) }}>Campus: West Hills</Badge>
+          <Badge style={{ marginRight: space(1) }} textStyle={{ fontSize: 12 }}>
+            40 available
+          </Badge>
+          <Badge style={{ marginRight: space(1) }} textStyle={{ fontSize: 12 }}>Campus: West Hills</Badge>
           <Badge
             style={{ backgroundColor: colors.ruby, marginRight: space(1) }}
-            textStyle={{ color: 'white' }}
+            textStyle={{ fontSize: 12, color: 'white' }}
           >
             Sold Out
           </Badge>
@@ -253,7 +255,7 @@ function IndexPage() {
                 .replace(')', ', 0.2)'),
               marginRight: space(1),
             }}
-            textStyle={{ color: colors.emerald }}
+            textStyle={{ fontSize: 12, color: colors.emerald }}
           >
             Open
           </Badge>
@@ -262,7 +264,7 @@ function IndexPage() {
               backgroundColor: 'white',
               marginRight: space(1),
             }}
-            textStyle={{ color: colors.emerald }}
+            textStyle={{ fontSize: 12, color: colors.emerald }}
           >
             <DoxyIcon
               name="check"
@@ -287,7 +289,7 @@ function IndexPage() {
           </Heading>
         </View>
         <Card
-          style={{ marginVertical: space(2), maxWidth: 600 }}
+          style={{ marginVertical: space(2), maxWidth: 300 }}
           title="Church Youth Retreat"
           subtitle="Begins May 2, 2018"
           image="https://placekitten.com/900/650"
@@ -326,12 +328,30 @@ function IndexPage() {
             Row
           </Heading>
         </View>
-        <RowGroup title="Row Group">
+        <RowGroup
+          title="Row Group Title"
+          buttonText="Subscribe"
+          style={{ width: 300 }}
+        >
           <Row
             style={{ marginVertical: space(1) }}
             title="Test Row"
-            description="The quick brown fox jumped over the lazy dog."
+            subtitle="The quick brown fox jumped over the lazy dog."
             avatar="https://placekitten.com/150/150"
+          />
+
+          <Row
+            style={{ marginVertical: space(1) }}
+            title="Another Test Row"
+            subtitle="The quick brown fox jumped over the lazy dog."
+            avatar="https://placekitten.com/250/250"
+          />
+
+          <Row
+            style={{ marginVertical: space(1) }}
+            title="Yet Another Test Row"
+            subtitle="The quick brown fox jumped over the lazy dog."
+            avatarText="KD"
           />
         </RowGroup>
 
