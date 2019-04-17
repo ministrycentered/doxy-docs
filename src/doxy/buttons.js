@@ -34,7 +34,10 @@ class DoxyButton extends Component {
         ? [this.props.bgColor, this.props.bgColor]
         : [colors.topaz, colors.emerald];
     var buttonType = null;
-    var buttonInner = null;
+    var buttonInner = !this.props.system 
+      && !this.props.plain 
+      && !this.props.compact
+      && styles.primaryButtonInner;
     var buttonText = this.props.disabled
       ? styles.disabledText
       : styles.primaryText;
@@ -53,6 +56,7 @@ class DoxyButton extends Component {
     } else if (this.props.minor) {
       buttonText = styles.minorText;
       buttonScale = styles.minorButton;
+      buttonInner = !this.props.compact && styles.minorButtonInner;
 
       if (this.props.compact) {
         buttonColors = ['transparent', 'transparent'];
@@ -147,12 +151,13 @@ const styles = StyleSheet.create({
 
   primaryButton: {
     height: 40,
-    paddingHorizontal: 8,
+  },
+  primaryButtonInner: {
+    paddingHorizontal: 20
   },
   buttonInner: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 12
   },
   primaryText: {
     color: 'white',
@@ -165,7 +170,7 @@ const styles = StyleSheet.create({
 
   compactButton: {
     height: 32,
-    paddingHorizontal: 4,
+    paddingHorizontal: 12,
   },
 
   secondaryButton: {
@@ -181,13 +186,14 @@ const styles = StyleSheet.create({
   compactSecondaryButtonInner: {
     height: 28,
     backgroundColor: 'white',
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     borderRadius: 20,
   },
   minorSecondaryButtonInner: {
     height: 22,
     backgroundColor: 'white',
     borderRadius: 20,
+    paddingHorizontal: 12
   },
   secondaryText: {
     color: colors.turquoise,
@@ -204,6 +210,9 @@ const styles = StyleSheet.create({
 
   minorButton: {
     height: 24,
+  },
+  minorButtonInner: {
+    paddingHorizontal: 12,
   },
   minorSecondaryButton: {
     paddingHorizontal: 1,
