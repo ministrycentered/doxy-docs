@@ -32,6 +32,14 @@ function IndexPage() {
         <h1>Components</h1>
 
         <View>
+          <Heading
+            level={2}
+            style={{ marginVertical: space(2), marginTop: space(4) }}
+          >
+            Typography
+          </Heading>
+        </View>
+        <View>
           <Heading level={1} style={{ marginBottom: space(2) }}>
             This is a Doxy level 1 heading!
           </Heading>
@@ -58,57 +66,64 @@ function IndexPage() {
         </View>
         <View>
           <PlainText style={{ marginBottom: space(2) }}>
-            PlainText test.
+            The is a PlainText component.
           </PlainText>
         </View>
         <View>
           <SecondaryText style={{ marginBottom: space(2) }}>
-            SecondaryText test.
+            This is a SecondaryText component.
           </SecondaryText>
         </View>
         <View>
           <TertiaryText style={{ marginBottom: space(2) }}>
-            TertiaryText test.
+            This is a TertiaryText component.
           </TertiaryText>
         </View>
         <View>
-          <Footnote style={{ marginBottom: space(2) }}>Footnote test.</Footnote>
+          <Footnote style={{ marginBottom: space(2) }}>
+            This is a Footnote component.
+          </Footnote>
         </View>
 
+        <View>
+          <Heading level={2} style={{ marginTop: space(4) }}>
+            Buttons
+          </Heading>
+        </View>
         <DoxyButton
-          text="Test primary button!"
+          text="Primary"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
         <DoxyButton
           secondary
-          text="Test button!"
+          text="Secondary"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
         <DoxyButton
           disabled
-          text="Test primary button!"
+          text="Primary Disabled"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
         <DoxyButton
           compact
-          text="Test compact button!"
+          text="Compact"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
         <DoxyButton
           compact
           secondary
-          text="Test compact button!"
+          text="Compact Secondary"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
         <DoxyButton
           compact
           disabled
-          text="Test compact button!"
+          text="Compact Disabled"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
         <DoxyButton
           minor
-          text="Test button!"
+          text="Minor"
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
         />
         <DoxyButton
@@ -116,14 +131,14 @@ function IndexPage() {
           secondary
           icon="plus"
           iconType="FontAwesome"
-          text="Add donation"
+          text="Minor Secondary"
           style={{ alignSelf: 'flex-start', marginVertical: space(3) }}
         />
 
         <DoxyButton
           minor
           compact
-          text="Edit"
+          text="Minor Compact"
           icon="pencil"
           iconType="FontAwesome"
           style={{ alignSelf: 'flex-start', marginBottom: space(2) }}
@@ -142,40 +157,69 @@ function IndexPage() {
 
         <DoxyButton
           plain
-          text="Test plain button!"
+          text="Plain"
           style={{ alignSelf: 'flex-start', marginVertical: space(2) }}
         />
 
         <DoxyButton
           system
-          text="Test plain button!"
+          text="System"
           style={{ alignSelf: 'flex-start', marginBottom: space(2) }}
         />
 
         <View style={{ flexDirection: 'row', marginBottom: space(3) }}>
-          <TextLink style={{ alignSelf: 'flex-start' }}>
-            Test text link
-          </TextLink>
+          <TextLink style={{ alignSelf: 'flex-start' }}>Text link</TextLink>
         </View>
 
+        <View>
+          <Heading
+            level={2}
+            style={{ marginTop: space(4), marginBottom: space(2) }}
+          >
+            Action Drawer
+          </Heading>
+        </View>
         <ActionBar
           style={{ alignSelf: 'flex-start', marginTop: space(3) }}
-          message="Test ActionDrawer"
+          message="ActionDrawer"
           buttonText="Register"
           buttonOnPress={() => {}}
         />
+
+        <View>
+          <Heading level={2} style={{ marginTop: space(4) }}>
+            Avatar
+          </Heading>
+        </View>
+
         <View style={{ flexDirection: 'row', marginVertical: space(3) }}>
           <Avatar style={{ marginRight: space(1) }} text="DD" />
           <Avatar image="https://placekitten.com/200/200" />
         </View>
+
+        <View>
+          <Heading
+            level={2}
+            style={{ marginTop: space(4), marginBottom: space(2) }}
+          >
+            Spinner
+          </Heading>
+        </View>
         <View
           style={{
             flex: 0,
+            width: 100,
             justifyContent: 'flex-start',
             marginVertical: space(3),
           }}
         >
           <DoxySpinner size={50} />
+        </View>
+
+        <View>
+          <Heading level={2} style={{ marginTop: space(4) }}>
+            Expanding Text
+          </Heading>
         </View>
         <ExpandingText style={{ marginVertical: space(3) }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper enim
@@ -186,6 +230,12 @@ function IndexPage() {
           anteponebas? An me, inquis, tam amentem putas, ut apud imperitos isto
           modo loquar?
         </ExpandingText>
+
+        <View>
+          <Heading level={2} style={{ marginVertical: space(2) }}>
+            Badge
+          </Heading>
+        </View>
 
         <View style={{ flexDirection: 'row' }}>
           <Badge style={{ marginRight: space(1) }}>40 available</Badge>
@@ -227,6 +277,15 @@ function IndexPage() {
             Open
           </Badge>
         </View>
+
+        <View>
+          <Heading
+            level={2}
+            style={{ marginVertical: space(1), marginTop: space(4) }}
+          >
+            Card
+          </Heading>
+        </View>
         <Card
           style={{ marginVertical: space(2), maxWidth: 600 }}
           title="Church Youth Retreat"
@@ -244,6 +303,14 @@ function IndexPage() {
           onPress={() => {}}
         />
 
+        <View>
+          <Heading
+            level={2}
+            style={{ marginVertical: space(1), marginTop: space(4) }}
+          >
+            Forms
+          </Heading>
+        </View>
         <Input
           primary
           placeholder="Input placeholder"
@@ -251,6 +318,14 @@ function IndexPage() {
         />
         <Select label="Select" style={{ marginVertical: space(2) }} />
 
+        <View>
+          <Heading
+            level={2}
+            style={{ marginVertical: space(2), marginTop: space(4) }}
+          >
+            Row
+          </Heading>
+        </View>
         <RowGroup title="Row Group">
           <Row
             style={{ marginVertical: space(1) }}
@@ -260,6 +335,14 @@ function IndexPage() {
           />
         </RowGroup>
 
+        <View>
+          <Heading
+            level={2}
+            style={{ marginVertical: space(1), marginTop: space(4) }}
+          >
+            Icon
+          </Heading>
+        </View>
         <View>
           <DoxyIcon
             name="image"
