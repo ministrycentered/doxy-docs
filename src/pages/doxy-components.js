@@ -41,32 +41,32 @@ function IndexPage() {
         </View>
         <View>
           <Heading level={1} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 1 heading!
+            This is a Doxy level 1 heading.
           </Heading>
         </View>
         <View>
           <Heading level={2} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 2 heading!
+            This is a Doxy level 2 heading.
           </Heading>
         </View>
         <View>
           <Heading level={3} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 3 heading!
+            This is a Doxy level 3 heading.
           </Heading>
         </View>
         <View>
           <Heading level={4} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 4 heading!
+            This is a Doxy level 4 heading.
           </Heading>
         </View>
         <View>
           <Heading level={5} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 5 heading!
+            This is a Doxy level 5 heading.
           </Heading>
         </View>
         <View>
           <PlainText style={{ marginBottom: space(2) }}>
-            The is a PlainText component.
+            This is a PlainText component.
           </PlainText>
         </View>
         <View>
