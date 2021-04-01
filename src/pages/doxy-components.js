@@ -38,44 +38,44 @@ function IndexPage() {
         </View>
         <View>
           <Heading level={1} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 1 heading.
+            Heading 1
           </Heading>
         </View>
         <View>
           <Heading level={2} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 2 heading.
+            Heading 2
           </Heading>
         </View>
         <View>
           <Heading level={3} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 3 heading.
+            Heading 3
           </Heading>
         </View>
         <View>
           <Heading level={4} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 4 heading.
+            Heading 4
           </Heading>
         </View>
         <View>
           <Heading level={5} style={{ marginBottom: space(2) }}>
-            This is a Doxy level 5 heading.
+            Heading 5
           </Heading>
         </View>
         <View>
-          <PlainText style={{ marginBottom: space(2) }}>This is a PlainText component.</PlainText>
+          <PlainText style={{ marginBottom: space(2) }}>Here is a sentence set in Text.</PlainText>
         </View>
         <View>
           <SecondaryText style={{ marginBottom: space(2) }}>
-            This is a SecondaryText component.
+            This is a Text component with the secondary style preset.
           </SecondaryText>
         </View>
         <View>
           <TertiaryText style={{ marginBottom: space(2) }}>
-            This is a TertiaryText component.
+            This is a Text component with the tertiary style preset.
           </TertiaryText>
         </View>
         <View>
-          <Footnote style={{ marginBottom: space(2) }}>This is a Footnote component.</Footnote>
+          <Footnote style={{ marginBottom: space(2) }}>This is a Text component with the footnote style preset.</Footnote>
         </View>
 
         <View>
